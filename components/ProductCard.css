@@ -1,0 +1,7 @@
+.productcontainer{
+    background-color: var(--White);
+    width: 95vw;
+    border-radius: 16px;
+    overflow: hidden;
+    margin: auto;
+}

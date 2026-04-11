@@ -1,0 +1,18 @@
+.priceseccion{
+    display: flex;
+    align-items: center;
+}
+.precio{
+    color: var(--Green-500);
+    font-family: var(--font-fraunces);
+    font-size: 28px;
+    font-weight: 700;
+}
+.descuento{
+    color: var(--Grey);
+    font-family: var(--font-fraunces);
+    font-weight: 500;
+    font-size: var(--Font-size-paragraph);
+    text-decoration : line-through;
+    margin-left: 16px;
+}
