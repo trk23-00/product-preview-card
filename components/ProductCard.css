@@ -3,5 +3,10 @@
     width: 95vw;
     border-radius: 16px;
     overflow: hidden;
-    margin: auto;
+    margin: 20px auto;
+
+}
+
+.descripcion_card{
+    padding: 35px;
 }

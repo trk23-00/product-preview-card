@@ -1,6 +1,8 @@
 .priceseccion{
     display: flex;
     align-items: center;
+    margin-top: 16px;
+    gap: 20px;
 }
 .precio{
     color: var(--Green-500);
@@ -14,5 +16,4 @@
     font-weight: 500;
     font-size: var(--Font-size-paragraph);
     text-decoration : line-through;
-    margin-left: 16px;
 }

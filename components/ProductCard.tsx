@@ -1,5 +1,6 @@
 import { PriceSeccion } from "@/components/PriceSeccion";
 import ProductDetails from "@/components/ProductDetails";
+import { ButtonSection }from "@/components/ButtonSection";
 import Image from "next/image";
 import "@/components/ProductCard.css"
 
@@ -10,11 +11,14 @@ export const ProductCard = () => {
       <Image
         src = {imgenproducto}
         alt = "imagen del producto"
-        width={350}
+        width= {360}
         height={350}
       />
-      <ProductDetails/>
-      <PriceSeccion/>
+      <div className="descripcion_card">
+        <ProductDetails/>
+        <PriceSeccion/>
+        <ButtonSection/>
+      </div>
     </div>
   )
 }
