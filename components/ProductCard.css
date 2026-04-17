@@ -1,12 +1,37 @@
 .productcontainer{
     background-color: var(--White);
     width: 95vw;
+    max-width: 500px;
     border-radius: 16px;
     overflow: hidden;
     margin: 20px auto;
+    padding: 0;
 
 }
 
 .descripcion_card{
     padding: 35px;
+    
+}
+
+.imagen_producto{
+    position: relative;
+    width: 100%;
+    height: 360px;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 1440px) {
+    .productcontainer{
+        display: flex;
+        min-width: 700px;
+        margin: 20px;
+    }
+    .descripcion_card{
+        width: 50%;
+    }
+    .imagen_producto{
+        width: 50%;
+        height: auto;
+    }
 }

@@ -3,8 +3,9 @@ export default function Home() {
   return (
     <div>
       <main>
-        <ProductCard/>
-        <ProductCard/>
+        <ProductCard />
+        <ProductCard />
+        <ProductCard />
       </main>
     </div>
   );
