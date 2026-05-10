@@ -1,14 +1,17 @@
 import "@/components/ProductDetails.css";
 
-const ProductDetails = () => {
+interface Datos {
+  categoria: string;
+  titulo: string;
+  description: string;
+}
+
+const ProductDetails = ({datos}:{datos:Datos}) => {
   return (
     <div>
-        <h3 className="categoria">Perfume</h3>
-        <h2 className="titulo">Gabrielle Essence Eau De Parfum</h2>
-        <p className="descripcion">
-            A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-            Perfumer-Creator for the House of CHANEL.
-        </p> 
+        <h3 className="categoria">{datos.categoria}</h3>
+        <h2 className="titulo">{datos.titulo}</h2>
+        <p className="descripcion">{datos.description}</p> 
     </div>
   )
 }

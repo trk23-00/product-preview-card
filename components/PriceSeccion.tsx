@@ -1,9 +1,15 @@
 import "@/components/PriceSeccion.css"
-export const PriceSeccion = () => {
+
+interface Datos{
+  new: string;
+  old: string;
+}
+
+export const PriceSeccion = ({datos}: {datos: Datos}) => {
   return (
     <div className="priceseccion">
-        <span className="precio">$149.99</span>
-        <span className="descuento">$169.99</span>
+        <span className="precio">${datos.new}</span>
+        <span className="descuento">${datos.old}</span>
     </div>
   )
 }

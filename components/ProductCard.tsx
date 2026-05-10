@@ -4,21 +4,47 @@ import { ButtonSection } from "@/components/ButtonSection";
 import Image from "next/image";
 import "@/components/ProductCard.css";
 
-export const ProductCard = () => {
-  const imgenproducto = "/image-product-mobile.jpg";
+interface Product {
+  createdAt: string;
+  title: string;
+  image: string;
+  category: string;
+  description: string;
+  newPrice: string;
+  oldPrice: string;
+  id: string;
+}
+
+/*title,image,category,description,
+  newPrice,oldPrice*/
+export const ProductCard = ({product}:{product:Product}) => {
+  //const imgenproducto = {image};
+  const imagenp = "/image-product-mobile.jpg";
+  
   return (
     <div className="productcontainer">
       <div className="imagen_producto">
         <Image
-          src={imgenproducto}
+          src={product.image}
           alt="imagen del producto"
           fill
           style={{objectFit: 'cover'}}
-        />
+          />
       </div>
       <div className="descripcion_card">
-        <ProductDetails />
-        <PriceSeccion />
+        <ProductDetails
+        datos={{
+          categoria: product.category,
+          titulo: product.title,
+          description: product.description
+        }}
+        />
+        <PriceSeccion 
+        datos={{
+          new: product.newPrice,
+          old: product.oldPrice
+        }}
+        />
         <ButtonSection />
       </div>
     </div>
