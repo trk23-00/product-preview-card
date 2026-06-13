@@ -2,11 +2,10 @@
     background-color: var(--White);
     width: 95vw;
     max-width: 500px;
+    min-height: 345px;
     border-radius: 16px;
     overflow: hidden;
-    margin: 20px;
     padding: 0;
-
 }
 
 .descripcion_card{
